@@ -7,7 +7,8 @@ output: html_document
 
 # Limpeza dos dados
 
-Nesse script iremos fazer a limpeza dos dados. Esse dados podem ser encontrados na Fundação do Meio Ambiente (http://www.feam.br/qualidade-do-ar/dados). Nos dados temos informações sobre a qualidade do ar na estação Puc São Gabriel de Belo Horizonte no ano de 2019.
+Nesse script iremos fazer a limpeza dos dados. Esse dados podem ser encontrados na Fundação do Meio Ambiente (http://www.feam.br/qualidade-do-ar/dados). 
+Nos dados temos informações sobre a qualidade do ar na estação Puc São Gabriel de Belo Horizonte no ano de 2019.
 
 ```{r}
 library(imputeTS)
@@ -21,7 +22,8 @@ dados = read.csv('https://raw.githubusercontent.com/kimleone/Poluicao-Atmosferic
 round(colSums(is.na(dados))*100/nrow(dados), 2) # Porcentagem de dados faltantes em cada variável
 ```
 
-Observamos que muitas variáveis apresentam valores faltantes. A variável que mede a radiação solar (RS) será removida por não apresentar nenhuma informação. Contudo, será feita a imputação dos valores faltantes nas demais variáveis.
+Observamos que muitas variáveis apresentam valores faltantes. A variável que mede a radiação solar (RS) será removida por não apresentar nenhuma informação. 
+Contudo, será feita a imputação dos valores faltantes nas demais variáveis.
 
 A imputação dos valores faltantes será feita com o uso da função `na_kalman` do pacote `imputeTS`. 
 
