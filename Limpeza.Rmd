@@ -7,40 +7,44 @@ output: html_document
 
 # Limpeza dos dados
 
-Nesse script iremos fazer a limpeza dos dados. Esse dados podem ser encontrados na Fundação do Meio Ambiente (http://www.feam.br/qualidade-do-ar/dados). 
-Nos dados temos informações sobre a qualidade do ar na estação Puc São Gabriel de Belo Horizonte no ano de 2019.
+Nesse script iremos fazer a limpeza dos dados. Esse dados podem ser encontrados na Fundação do Meio Ambiente ([FEAM](http://www.feam.br/qualidade-do-ar/dados)) ou no meu [Github](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Esta%C3%A7%C3%A3oCentroAvContorno2019-BH.csv).
+
+Nos dados temos informações sobre a qualidade do ar na estação Centro Avenida Contorno de Belo Horizonte no ano de 2019.
 
 ```{r}
-library(imputeTS)
 library(imputeTS)
 ```
 
 
 ```{r}
-dados = read.csv('https://raw.githubusercontent.com/kimleone/Poluicao-Atmosferica/main/Esta%C3%A7%C3%A3o%20Puc%20S%C3%A3o%20Gabriel2019-BH', sep = ';', dec = ',')
+dados = read.csv("https://raw.githubusercontent.com/kimleone/Poluicao-Atmosferica/main/Esta%C3%A7%C3%A3oCentroAvContorno2019-BH.csv", skip = 2,sep = ';', dec = ',')
 
-round(colSums(is.na(dados))*100/nrow(dados), 2) # Porcentagem de dados faltantes em cada variável
-```
+aux = read.csv("https://raw.githubusercontent.com/kimleone/Poluicao-Atmosferica/main/Esta%C3%A7%C3%A3oCentroAvContorno2019-BH.csv", skip = 1,sep = ';', dec = ',')[-1,]
 
-Observamos que muitas variáveis apresentam valores faltantes. A variável que mede a radiação solar (RS) será removida por não apresentar nenhuma informação. 
-Contudo, será feita a imputação dos valores faltantes nas demais variáveis.
-
-A imputação dos valores faltantes será feita com o uso da função `na_kalman` do pacote `imputeTS`. 
-
-```{r}
-dados <- dados[,-12]
-
-for (i in 2:12) {
-  dados[,i] <- na_kalman(dados[,i])
-}
-
+names(dados) <- names(aux); rm(aux)
+names(dados)[grep("Data.e.Hora", names(dados))] <- "Data"; names(dados)[grep("TÂº", names(dados))] <- "T"
 str(dados)
+```
+
+
+```{r}
+# Porcentagem de dados faltantes em cada variável
+round(colSums(is.na(dados))*100/nrow(dados), 2)
+```
+
+Observamos que apenas a variável $Data$ não apresenta valores faltantes. Logo, será feita a imputação de valores nas variáveis que apresentam dados faltantes.
+
+A imputação dos valores será feita com o uso da função `na_kalman` do pacote `imputeTS`. 
+
+```{r}
+dados[,-1] <- apply(dados[,-1], 2, na_kalman)
+head(dados)
 ```
 
 Agora temos uma base de dados completa!
 
 ```{r}
-#write.csv2(dados, "Poluicao(Limpos).csv")
+write.csv2(dados, "Poluicao(Limpos).csv")
 ```
 
 # Descrição das variáveis
@@ -67,5 +71,6 @@ Agora temos uma base de dados completa!
 
 **VV**: Velocidade do vento
 
-**UR**: Umidade relativa
+**RS**: Radiação Solar
 
+**UR**: Umidade relativa
