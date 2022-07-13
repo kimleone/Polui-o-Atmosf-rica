@@ -51,7 +51,7 @@ Timóteo3  |	Hospital Vital Brazil	| Aperam Inox S.A|	42d38'33.00"W  |	19d32'59.
 ##### [EstacaoPucSaoGabriel2019-BH](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/EstacaoPucSaoGabriel2019-BH.csv), [Poluicao(Limpo)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Poluicao(Limpo).csv), [Limpeza](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Limpeza.Rmd) e [LSTM(PM10)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/LSTM(PM10).ipynb).
 ---
 
-O arquivo [EstacaoPucSaoGabriel2019-BH] temos uma das bases de dados disponibilizadas pela [FEAM](http://www.feam.br/qualidade-do-ar/dados). Este arquivo tem os dados da qualidade do ar no município de Belo Horizonte (na estação Puc São Gabriel). Realizamos a limpeza dos dados brutos, cujo código está disponível em:
+O arquivo [EstacaoPucSaoGabriel2019-BH](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/EstacaoPucSaoGabriel2019-BH.csv) temos uma das bases de dados disponibilizadas pela [FEAM](http://www.feam.br/qualidade-do-ar/dados). Este arquivo tem os dados da qualidade do ar no município de Belo Horizonte (na estação Puc São Gabriel). Realizamos a limpeza dos dados brutos, cujo código está disponível em:
 - [Limpeza](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Limpeza.Rmd). 
 
 Assim, a base de dados da qualidade do ar da estação Puc São Gabriel após a limpeza está disponível em: 
