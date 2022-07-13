@@ -4,7 +4,7 @@ A poluição atmosférica refere-se a mudanças da atmosfera terrestre suscetív
 
 ## Material Particulado
 
-Material particulado é o termo utilizado para uma mistura de partículas sólidas e gotas de líquidos encontrados na atmosfera2. Algumas dessas partículas podem ser grandes, escuras e, portanto, visíveis, tais como a fumaça ou a fuligem. Outras são tão pequenas que somente podem ser vistas através de um microscópio.
+Material particulado é o termo utilizado para uma mistura de partículas sólidas e gotas de líquidos encontrados na atmosfera. Algumas dessas partículas podem ser grandes, escuras e, portanto, visíveis, tais como a fumaça ou a fuligem. Outras são tão pequenas que somente podem ser vistas através de um microscópio.
 
 ![](https://i.ytimg.com/vi/9rPTblS_Gec/maxresdefault.jpg)
 
