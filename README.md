@@ -46,11 +46,13 @@ Timóteo1 | Cecília Meireles 	| Aperam Inox S.A |	42d39'23.00"W  |	19d32'47.00"
 Timóteo2 |	Escola Sementinha | Aperam Inox S.A |	42d40'16.00"W  |	19d32'12.00"S | 0.0908
 Timóteo3  |	Hospital Vital Brazil	| Aperam Inox S.A|	42d38'33.00"W  |	19d32'59.00"S |	0.1017
 
-O arquivo [EstacaoPucSaoGabriel2019-BH](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/EstacaoPucSaoGabriel2019-BH.csv) temos uma das bases de dados disponibilizadas pela [FEAM](http://www.feam.br/qualidade-do-ar/dados). Este arquivo tem os dados da qualidade do ar no município de Belo Horizonte (na estação Puc São Gabriel). Realizamos a limpeza dos dados brutos, cujo código está disponível em:
+O arquivo [EstacaoCentroAvContorno2019-BH](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/EstacaoCentroAvContorno2019-BH.csv) temos uma das bases de dados disponibilizadas pela [FEAM](http://www.feam.br/qualidade-do-ar/dados). Este arquivo tem os dados da qualidade do ar no município de Belo Horizonte (na estação Centro Av. do Contorno). Realizamos a limpeza dos dados brutos, cujo código está disponível em:
 - [Limpeza](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Limpeza.Rmd). 
 
-Assim, a base de dados da qualidade do ar da estação Puc São Gabriel após a limpeza está disponível em: 
-- [Poluicao(Limpo)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Poluicao(Limpo).csv). 
+Assim, a base de dados da qualidade do ar da estação Centro Av. do Contorno após a limpeza está disponível em: 
+- [XX]00. 
+
+
 
 Para os dados da estação Puc São Gabriel, realizamos a aplicação de uma rede neural Long short-term memory (LSTM). O código deste modelo está disponível em: 
 - [LSTM(PM10)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/LSTM(PM10).ipynb)
