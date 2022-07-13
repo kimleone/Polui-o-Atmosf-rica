@@ -8,12 +8,11 @@ Material particulado é o termo utilizado para uma mistura de partículas sólid
 
 ![](https://i.ytimg.com/vi/9rPTblS_Gec/maxresdefault.jpg)
 
-Neste repositório, temos bases de dados que contém o nível de Material Particulado (PM10) em alguns municípios de Minas Gerais. Essas bases de dados foram construídas com os dados disponíveis no site da Fundação Estadual do Meio Ambiente ([FEAM](http://www.feam.br/qualidade-do-ar/dados)).
+Neste repositório, temos bases de dados que contém o nível de Material Particulado (PM10) em alguns municípios de Minas Gerais. Essas bases de dados foram construídas com os dados disponíveis no site da Fundação Estadual do Meio Ambiente ([FEAM](http://www.feam.br/qualidade-do-ar/dados).
 Além das bases de dados, também disponibilizo alguns códigos que utilizei nessas bases de dados para análise. Segue informações referentes a cada um dos arquivos disponíveis:
+
 ---
-##### [Dados(Completo)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Dados(Completo).csv)
----
-Neste arquivo, temos as concentração de PM10 em 29 estações espalhadas pelo estado de Minas Gerais. O período das concentrações de PM10 é de janeiro de 2015 a janeiro de 2019. Como os dados originais apresentavam dados faltantes, utilizamos a função `na_kalman` do pacote `imputeTS` do Software $R$ para imputação dos valores faltantes. O dicionário das estações e algumas informações como quantidade de dados faltantes e a respeito das empresas responsáveis pela coleta podem ser consultadas a seguir:
+No arquivo [Dados(Completo)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Dados(Completo).csv), temos as concentração de PM10 em 29 estações espalhadas pelo estado de Minas Gerais. O período das concentrações de PM10 é de janeiro de 2015 a janeiro de 2019. Como os dados originais apresentavam dados faltantes, utilizamos a função `na_kalman` do pacote `imputeTS` do Software $R$ para imputação dos valores faltantes. O dicionário das estações e algumas informações como quantidade de dados faltantes e a respeito das empresas responsáveis pela coleta podem ser consultadas a seguir:
 
 Name | Name of station | Responsible Company | Longitude | Latitude | Rate of missing values
 -----|-----------------|---------------------|-----------|----------|-----------------------
@@ -48,9 +47,6 @@ Timóteo2 |	Escola Sementinha | Aperam Inox S.A |	42d40'16.00"W  |	19d32'12.00"S
 Timóteo3  |	Hospital Vital Brazil	| Aperam Inox S.A|	42d38'33.00"W  |	19d32'59.00"S |	0.1017
 
 ---
-##### [EstacaoPucSaoGabriel2019-BH](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/EstacaoPucSaoGabriel2019-BH.csv), [Poluicao(Limpo)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Poluicao(Limpo).csv), [Limpeza](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Limpeza.Rmd) e [LSTM(PM10)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/LSTM(PM10).ipynb).
----
-
 O arquivo [EstacaoPucSaoGabriel2019-BH](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/EstacaoPucSaoGabriel2019-BH.csv) temos uma das bases de dados disponibilizadas pela [FEAM](http://www.feam.br/qualidade-do-ar/dados). Este arquivo tem os dados da qualidade do ar no município de Belo Horizonte (na estação Puc São Gabriel). Realizamos a limpeza dos dados brutos, cujo código está disponível em:
 - [Limpeza](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Limpeza.Rmd). 
 
@@ -59,4 +55,4 @@ Assim, a base de dados da qualidade do ar da estação Puc São Gabriel após a 
 
 Para os dados da estação Puc São Gabriel, realizamos a aplicação de uma rede neural Long short-term memory (LSTM). O código deste modelo está disponível em: 
 - [LSTM(PM10)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/LSTM(PM10).ipynb)
- 
+ Nesse arquivo, nosso principal objetivo foi prever a concentração de PM10 nas ultimas 24 horas de 2019 na estação Puc São Gabriel.
