@@ -54,10 +54,11 @@ Nos arquivos [EstacaoCentroAvContorno2019-BH](https://github.com/kimleone/Poluic
 O código da limpeza para a estação Av. do Contorno está disponível em:
 - [Limpeza](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Limpeza.Rmd). 
 
-No arquivo [BOXPLOTS](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/BOXPLOTS.R) temos o script para a contrução dos boxplots diários, mensais e semanais que vemos a seguir:
+No arquivo [BOXPLOTS](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/BOXPLOTS.R) temos o script para a contrução dos boxplots horário, diário, mensal e anual que vemos a seguir:
 
 ![](https://raw.githubusercontent.com/kimleone/Poluicao-Atmosferica/main/Box.png)
 
+Esses boxplots foram feitos utilizando os dados pré-processados deste repositório: [Dados(Completo)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Dados(Completo).csv).
 Nesses boxplots podemos analisar o comportamento da concentração de PM10 ao londo dos 5 anos na estação Centro Av. do Contorno.
 
 Para os dados da estação Puc São Gabriel, utilizamos uma rede neural Long short-term memory (LSTM). O código deste modelo está disponível em: 
