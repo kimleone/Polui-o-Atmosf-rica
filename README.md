@@ -12,6 +12,7 @@ Neste repositório, temos bases de dados que contém o nível de Material Partic
 Além das bases de dados, também disponibilizo alguns códigos que utilizei nessas bases de dados para análise. Segue informações referentes a cada um dos arquivos disponíveis:
 
 ---
+### Descrição dos Arquivos
 No arquivo [Dados(Completo)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Dados(Completo).csv), temos as concentração de PM10 em 29 estações espalhadas pelo estado de Minas Gerais. O período das concentrações de PM10 é de janeiro de 2015 a janeiro de 2019. Como os dados originais apresentavam dados faltantes, utilizamos a função `na_kalman` do pacote `imputeTS` do Software $R$ para imputação dos valores faltantes. O dicionário das estações e algumas informações como quantidade de dados faltantes e a respeito das empresas responsáveis pela coleta podem ser consultadas a seguir:
 
 Name | Name of station | Responsible Company | Longitude | Latitude | Rate of missing values
