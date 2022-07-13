@@ -11,8 +11,6 @@ Material particulado é o termo utilizado para uma mistura de partículas sólid
 Neste repositório, temos bases de dados que contém o nível de Material Particulado (PM10) em alguns municípios de Minas Gerais. Essas bases de dados foram construídas com os dados disponíveis no site da Fundação Estadual do Meio Ambiente ([FEAM](http://www.feam.br/qualidade-do-ar/dados)).
 Além das bases de dados, também disponibilizo alguns códigos que utilizei nessas bases de dados para análise. Segue informações referentes a cada um dos arquivos disponíveis:
 
-#### CSV
-
 ##### [Dados(Completo)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Dados(Completo).csv)
 ---
 Neste arquivo, temos as concentração de PM10 em 29 estações espalhadas pelo estado de Minas Gerais. O período das concentrações de PM10 é de janeiro de 2015 a janeiro de 2019. Como os dados originais apresentavam dados faltantes, utilizamos a função `na_kalman` do pacote `imputeTS` do Software $R$ para imputação dos valores faltantes. O dicionário das estações e algumas informações como quantidade de dados faltantes e a respeito das empresas responsáveis pela coleta podem ser consultadas a seguir:
@@ -46,14 +44,19 @@ S.J.daLapa2 |	Centro (Delegacia)	| Belocal |	43d57'36.70"W  |	19d42'00.54"S  |	0
 S.J.daLapa3	| Jardim Encantado 	| ICAL |	43d56'17.33"W	| 19d41'49.21"S |	0.2114
 S.J.daLapa4 |	Escola Municipal Filinha Gama |	ICAL |	43d57'50.73"W  |	19d42'47.45"S |	0.3371
 Timóteo1 | Cecília Meireles 	| Aperam Inox S.A |	42d39'23.00"W  |	19d32'47.00"S | 0.2533
-Timóteo2 |	Escola Sementinha 	| Aperam Inox S.A |	42d40'16.00"W  |	19d32'12.00"S | 0.0908
+Timóteo2 |	Escola Sementinha | Aperam Inox S.A |	42d40'16.00"W  |	19d32'12.00"S | 0.0908
 Timóteo3  |	Hospital Vital Brazil	| Aperam Inox S.A|	42d38'33.00"W  |	19d32'59.00"S |	0.1017
 
 
-##### [Poluicao(Limpo)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Poluicao(Limpo).csv)
+##### [EstacaoPucSaoGabriel2019-BH](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/EstacaoPucSaoGabriel2019-BH.csv), [Poluicao(Limpo)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Poluicao(Limpo).csv), [Limpeza](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Limpeza.Rmd) e [LSTM(PM10)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/LSTM(PM10).ipynb).
+---
 
-##### [EstacaoPucSaoGabriel2019-BH](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/EstacaoPucSaoGabriel2019-BH.csv)
+O arquivo [EstacaoPucSaoGabriel2019-BH] temos uma das bases de dados disponibilizadas pela [FEAM](http://www.feam.br/qualidade-do-ar/dados). Este arquivo tem os dados da qualidade do ar no município de Belo Horizonte (na estação Puc São Gabriel). Realizamos a limpeza dos dados brutos, cujo código está disponível em:
+- [Limpeza](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Limpeza.Rmd). 
 
-#### Código R
+Assim, a base de dados da qualidade do ar da estação Puc São Gabriel após a limpeza está disponível em: 
+- [Poluicao(Limpo)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/Poluicao(Limpo).csv). 
 
-#### Código Python
+Para os dados da estação Puc São Gabriel, realizamos a aplicação de uma rede neural Long short-term memory (LSTM). O código deste modelo está disponível em: 
+- [LSTM(PM10)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/LSTM(PM10).ipynb)
+ 
