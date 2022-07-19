@@ -24,7 +24,7 @@ BH1	| Centro Av. do Contorno | Refinaria Gabriel Passos	|	43d56'08.87"W |	19d54'
 BH2 | Delegacia Amazonas | V\&M do Brasil S.A | 43d59'41.50"W |	19d56'14.90"S |	0.2250 
 Brumadinho2 |	Comunidade do Feijão	| Vale S.A |	44d06'32.19"W |	20d08'09.13"S |	0.2492
 C..Fabriciano |	Senac  - (Vale do Aço)	| Aperam Inox S.A	| 42d37'38.00"W |	19d31'49.00"S | 0.1119
-Contagem | Cidade Industrial | V\&M do Brasil S.A |	44d01'54.27"W |	19d57'38.07"S &	0.2709
+Contagem | Cidade Industrial | V\&M do Brasil S.A |	44d01'54.27"W |	19d57'38.07"S |	0.2709
 Ibirité1 | Cascata | Refinaria Gabriel Passos | 44d05'10.73"W |	19d59'15.31"S |	0.1019 
 Ibirité2  |	Piratininga (Ibiritermo)	| Refinaria Gabriel Passos |	44d03'34.89"W  |  20d00'14.27"S	|  0.0471 
 Ipatinga1  |	Bom Retiro	| Usiminas |	42d33'25.28"W  |	19d30'34.55"S  |	0.0877
