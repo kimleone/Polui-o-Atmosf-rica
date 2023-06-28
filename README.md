@@ -66,3 +66,7 @@ Para os dados da estação Puc São Gabriel, utilizamos uma rede neural Long sho
 - [LSTM(PM10)](https://github.com/kimleone/Poluicao-Atmosferica/blob/main/LSTM(PM10).ipynb)
 
 Nesse arquivo, nosso principal objetivo foi prever a concentração de PM10 nas ultimas 24 horas de 2019 na estação Puc São Gabriel.
+
+
+Artigo publicado na Scientific Reports:
+> da Silva, Kim Leone Souza, et al. "Spatio-temporal visualization and forecasting of PM 10 in the Brazilian state of Minas Gerais." Scientific Reports 13.1 (2023): 3269.
